@@ -1,0 +1,6 @@
+{
+	"CollectURL": "https://collect#####game.deltadna.net/collect/api",
+ 	"EnvironmentType" : "Live",
+	"API-Key": "API UUID here",
+	"API-Password": "API Password here "
+}

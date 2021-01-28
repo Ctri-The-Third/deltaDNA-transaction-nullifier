@@ -29,25 +29,25 @@ def invertEvent(paramObj):
 
         eventObj = {}
         
-        eventObj["eventName"] = paramObj["eventName"]
-        del paramObj["eventName"]
-        eventObj["userID"] = paramObj["userID"]
-        del paramObj["userID"]
-        eventObj["sessionID"] = paramObj["sessionID"]
-        del paramObj["sessionID"]
-        eventObj["eventTimestamp"] = paramObj["eventTimestamp"].strftime(r'%Y-%m-%d %H:%M:%S')
-        del paramObj["eventTimestamp"]
-        paramObj["transactionName"] = "ManualCorrection"
+        eventObj["EVENTNAME"] = paramObj["EVENTNAME"]
+        del paramObj["EVENTNAME"]
+        eventObj["USERID"] = paramObj["USERID"]
+        del paramObj["USERID"]
+        eventObj["SESSIONID"] = paramObj["SESSIONID"]
+        del paramObj["SESSIONID"]
+        eventObj["EVENTTIMESTAMP"] = paramObj["EVENTTIMESTAMP"].strftime(r'%Y-%m-%d %H:%M:%S')
+        del paramObj["EVENTTIMESTAMP"]
+        paramObj["TRANSACTIONNAME"] = "ManualCorrection"
         
         
         
-        paramObj["productsReceived"] = {} 
-        paramObj["productsSpent"] = {} 
-        paramObj["productsSpent"]["realCurrency"] = {} 
-        paramObj["productsSpent"]["realCurrency"]["realCurrencyAmount"] = -paramObj["realCurrencyAmount"]
-        paramObj["productsSpent"]["realCurrency"]["realCurrencyType"] = paramObj["realCurrencyType"]
-        del paramObj["realCurrencyAmount"] 
-        del paramObj["realCurrencyType"] 
+        paramObj["PRODUCTSRECEIVED"] = {} 
+        paramObj["PRODUCTSSPENT"] = {} 
+        paramObj["PRODUCTSSPENT"]["REALCURRENCY"] = {} 
+        paramObj["PRODUCTSSPENT"]["REALCURRENCY"]["REALCURRENCYAMOUNT"] = -paramObj["REALCURRENCYAMOUNT"]
+        paramObj["PRODUCTSSPENT"]["REALCURRENCY"]["REALCURRENCYTYPE"] = paramObj["REALCURRENCYTYPE"]
+        del paramObj["REALCURRENCYAMOUNT"] 
+        del paramObj["REALCURRENCYTYPE"] 
         
         eventObj["eventParams"] = paramObj
         

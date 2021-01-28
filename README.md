@@ -27,7 +27,7 @@ In the same directory as the script files, create a `settings.json` file with th
 
 Make sure you fill user and db fields with your deltadna login credentials (for fetching analytics data about your game via Direct Access) and the collectURL and collectKey with the details for sending events to the platform for the matching game via our Rest APIs
 
-![note, screenshot here]()
+![note, screenshot here showing where the data pieces come from]()
 
 ### input.csv
 

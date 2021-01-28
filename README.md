@@ -31,3 +31,7 @@ Make sure you fill user and db fields with your deltadna login credentials (for 
 
 ### input.csv
 
+For each transaction event that you wish to hide from your aggregate values, add the mainEventID to a row in the input.csv file.
+
+![note, screenshot here]()
+

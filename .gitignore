@@ -1,2 +1,7 @@
 
 AppConfig.json
+.vscode/launch.json
+.vscode/settings.json
+__pycache__/eventHelper.cpython-37.pyc
+__pycache__/Connect.cpython-37.pyc
+input.csv
